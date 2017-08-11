@@ -114,3 +114,15 @@ function multiplyArray(testArray){ //eslint-disable-line
 testMultiplyArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+var sumMsg = document.getElementById('sum');
+sumMsg.innerText = sum(4, 7)[1];
+var multiplicationMsg = document.getElementById('mul');
+multiplicationMsg.innerText = multiply(5,9)[1];
+var sumAndMulMsgOne = document.getElementById('sumMulOne');
+sumAndMulMsgOne.innerText = sumAndMultiply(4,7,5)[2];
+var sumAndMulMsgTwo = document.getElementById('sumMulTwo');
+sumAndMulMsgTwo.innerText = sumAndMultiply(4,7,5)[3];
+var sumArrayMsg = document.getElementById('sumArray');
+sumArrayMsg.innerText = sumArray(testArray)[1];
+var mulArrayMsg = document.getElementById('mulArray');
+mulArrayMsg.innerText = multiplyArray(testArray)[1];
