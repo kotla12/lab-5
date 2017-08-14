@@ -49,9 +49,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 function sumAndMultiply(a,b,c){ //eslint-disable-line
   var addSumOne = sum(a,b)[0];
-  console.log (addSumOne);
   var addSumTwo = sum(addSumOne,c)[0];
-  console.log(addSumTwo);
   var productOne = multiply(a,b)[0];
   var productTwo = multiply(productOne,c)[0];
   var outputOne = a + ' and ' + b + ' and ' + c + ' sum to ' + addSumTwo + '.';
@@ -79,10 +77,8 @@ function sumArray(testArray){ //eslint-disable-line
   for (var i = 0 ; i < testArray.length ; i++)
   {
     count = sum(testArray[i], count)[0];
-    console.log(count);
   }
   var output = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + count + ' is their sum.';
-  console.log(output);
   return [count, output];
 }
 
@@ -103,10 +99,8 @@ function multiplyArray(testArray){ //eslint-disable-line
   var count = 1;
   for (var i = 0; i < testArray.length; i++){
     count = multiply(testArray[i], count)[0];
-    console.log(count);
   }
   var output = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + count + '.';
-  console.log(output);
   return [count, output];
 }
 
